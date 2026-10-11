@@ -1,0 +1,57 @@
+.currency-box {
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+
+    display: flex;
+}
+
+/* Left side */
+.amount-section {
+    width: 50%;
+}
+
+.label {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.amount-input {
+    width: 100%;
+    padding: 6px 0;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Right side */
+.currency-section {
+    width: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    text-align: right;
+}
+
+.currency-label {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0 0 8px 0;
+}
+
+.currency-select {
+    border-radius: 8px;
+    padding: 4px;
+
+    background-color: #f3f4f6;
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+}

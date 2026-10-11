@@ -1,0 +1,55 @@
+.app-footer {
+  background-color: #ffffff;
+  border-top: 1px solid #eaeaec;
+  padding: 20px 0;
+  font-family: sans-serif;
+  
+  /* These two properties help push the footer to the bottom of the page */
+  margin-top: auto; 
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 15px;
+}
+
+.copyright {
+  color: #777777;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+/* Make it stack neatly on mobile screens */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

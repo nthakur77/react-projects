@@ -1,0 +1,56 @@
+/* InstagramStats.css */
+
+.ig-stats {
+  max-width: 320px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.ig-stats:hover {
+  transform: translateY(-5px);
+}
+
+.ig-stats img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  
+  /* Creates the classic Instagram-style colored ring */
+  padding: 4px;
+  background: white;
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box, 
+              linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) border-box;
+}
+
+.ig-stats h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #262626; /* Instagram's standard dark gray text */
+}
+
+/* Styles the Followers text */
+.ig-stats p:nth-of-type(1) {
+  margin: 0;
+  font-weight: 600;
+  color: #262626;
+  font-size: 1rem;
+}
+
+/* Styles the Bio text */
+.ig-stats p:nth-of-type(2) {
+  margin: 1rem 0 0 0;
+  color: #737373;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Preserves any line breaks in their IG bio */
+}
