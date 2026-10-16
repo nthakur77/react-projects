@@ -1,0 +1,226 @@
+.hud-footer {
+  background: #060a14;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin-top: auto;
+}
+
+/* Top Telemetry Strip */
+.hud-footer-banner {
+  background: rgba(15, 23, 42, 0.9);
+  border-bottom: 1px solid #1e293b;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.82rem;
+}
+
+.hud-banner-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hud-banner-status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #cbd5e1;
+}
+
+.banner-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.led-green {
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.led-red {
+  background: #ef4444;
+  box-shadow: 0 0 8px #ef4444;
+}
+
+.hud-banner-sync strong {
+  color: #38bdf8;
+}
+
+/* Main 4-Column Grid */
+.hud-footer-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.1fr 1.2fr;
+  gap: 2.25rem;
+}
+
+.hud-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.hud-footer-title {
+  color: #f8fafc;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.hud-footer-tag {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.hud-footer-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #64748b;
+}
+
+.hud-col-title {
+  color: #f8fafc;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  margin: 0 0 1rem 0;
+}
+
+/* Navigation Links */
+.hud-footer-nav,
+.hud-threshold-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.hud-f-link {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+.hud-f-link:hover,
+.hud-f-link.active {
+  color: #38bdf8;
+  padding-left: 4px;
+}
+
+.hud-f-ai {
+  color: #c084fc;
+  font-weight: 600;
+}
+
+/* Threshold Indicators */
+.hud-threshold-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+.th-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.th-optimal { background: #10b981; }
+.th-warning { background: #f59e0b; }
+.th-critical { background: #ef4444; }
+
+/* Hardware Spec Box */
+.hud-spec-box {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.hud-spec-box div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-spec-box strong {
+  color: #e2e8f0;
+}
+
+.back-top-btn {
+  width: 100%;
+  background: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 0.45rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.back-top-btn:hover {
+  background: #38bdf8;
+  color: #020617;
+  border-color: #38bdf8;
+}
+
+/* Bottom Bar */
+.hud-footer-bottom {
+  background: #03060c;
+  border-top: 1px solid #0f172a;
+  padding: 1rem 1.5rem;
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+.hud-bottom-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .hud-footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hud-footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .hud-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

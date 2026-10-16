@@ -2,13 +2,9 @@
 using namespace std; 
 
 int main(){
-    int a = 0;
+    int a = 15 | 20; 
 
-    int* p = &a; 
-
-    cout << a << " " << p; // p is 64 bit or 32 bit
-
-    fprintf(stderr, "hang");
+    cout << a << endl; 
 
     return 0;
 }
